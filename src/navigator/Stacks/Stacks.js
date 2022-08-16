@@ -4,6 +4,7 @@ import { colors } from 'theme'
 import Home from 'pages/Home'
 import Profile from 'pages/Profile'
 import Details from 'pages/Details'
+import CameraExample from 'pages/CameraExample'
 import HeaderLeft from './HeaderLeft'
 import HeaderTitle from './HeaderTitle'
 
@@ -46,6 +47,10 @@ export const HomeNavigator = () => (
         headerLeft: () => <HeaderLeft navigation={navigation} />,
         headerTitle: () => <HeaderTitle />,
       })}
+    />
+    <Stack.Screen
+      name="CameraExample"
+      component={CameraExample}
     />
   </Stack.Navigator>
 )
